@@ -1,22 +1,20 @@
-# PgAr2022_Esame_HarpreetSingh
-2 ## Candidato
-3
-4 | | |
-5 | -------------- | --------------- |
-6 | Nome | ** < Harpreet >** |
-7 | Cognome | ** < Singh >** |
-8 | Matricola | ** < 736972 >** |
-9 | Corso di Studi | ** < Ingegneria informatica >** |
-10
-11 ## Moduli Implementati
-12
-13 <! - - Spuntare con una ’X ’ i moduli implementati -->
-14
-15 - Modulo 1
-16 - [x] Modulo 1. A : Lettura XML e creazione mappa
-17 - [ ] Modulo 1. B : Creazione casuale della mappa
-18 - [x] Modulo 2: Scale e miniboss
-19 - [ ] Modulo 3: Pathfinding dei mostri
-20 - [ ] Modulo 4: Zaino ed effetti
-21 - [ ] Modulo 5: Shop e Monete
-22 - [ ] Modulo 6: Dijikstra
+# PgAr2022Esame < Harpreet Singh >
+## Harpreet Singh
+ |                |                       |
+ | -------------- | ----------------      |
+ | Nome           | **< Harpreet >**      |
+ | Cognome        | **< Singh >**         |
+ | Matricola      | **< 736972 >**        |
+ | Corso di Studi | **<Inge. infor>**     |
+
+ ## Moduli Implementati
+
+ <!-- Spuntare con una ’X’ i moduli implementati -->
+ - Modulo 1
+ - [X] Modulo 1.A: Lettura XML e creazione mappa
+ - [ ] Modulo 1.B: Creazione casuale della mappa
+ - [ ] Modulo 2: Scale e miniboss
+ - [ ] Modulo 3: Pathfinding dei mostri
+ - [ ] Modulo 4: Zaino ed effetti
+ - [ ] Modulo 5: Shop e Monete
+ - [ ] Modulo 6: Dijikstra
