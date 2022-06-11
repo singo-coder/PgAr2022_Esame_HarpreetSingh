@@ -8,6 +8,11 @@ public class Arma extends Oggetto{
 		this.nome = nome;
 		this.potenza = potenza;
 	}
+	
+	public Arma() {
+
+	}
+	
 	public String getNome() {
 		return nome;
 	}

@@ -11,14 +11,26 @@ public abstract class Entita {
 	Posizione pos;
 	private Arma a;
 	
+	public Entita(String nome,int x,int y,Arma a) {
+		
+	}
 	
 	public Entita(String nome, int vita, int atk, int def, int x,int y) {
-		super();
 		this.nome = nome;
 		this.vita = vita;
 		this.atk = atk;
 		this.def = def;
 		this.pos = new Posizione(x,y);
+		this.a=a;
+	}
+	
+	public Entita(String nome, int vita, int atk, int def, int x,int y,Arma a) {
+		this.nome = nome;
+		this.vita = vita;
+		this.atk = atk;
+		this.def = def;
+		this.pos = new Posizione(x,y);
+		this.a=a;
 	}
 	
 	public Arma getA() {

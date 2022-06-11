@@ -1,25 +1,26 @@
 package it.unibs.fp.adventuretime;
 import it.unibs.fp.mylib.*;
 public class Weapons {
+		Arma pugno = new Arma("pugno", 1 );
 		Arma mitra = new Arma("mitraglietta fortnite", EstrazioniCasuali.estraiIntero(35, 55) );
 		Arma pugnale = new Arma("pugnale avvelenato", EstrazioniCasuali.estraiIntero(35, 55));
 		Arma libro = new Arma("libro di algebra", EstrazioniCasuali.estraiIntero(35, 55));
 		Arma lancia = new Arma("lancia sparafuoco", EstrazioniCasuali.estraiIntero(35, 55));
 
-		/*public Arma scegliArma(){
-			
-			int sceltaArma=InputDati.leggiIntero("Scegli quale arma estrarre: \n",1,4);
+		public Arma scegliArma(int sceltaArma){
+			Arma a=new Arma();
 			switch(sceltaArma) {
 			case 1:
-				return mitra;
+				a=mitra;
 			case 2:
-				return pugnale;
+				a=pugnale;
 			case 3:
-				return libro;
+				a= libro;
 			case 4:
-				return lancia;
+				a = lancia;
 			}
-		}*/
+			return a;
+		}
 		
 		public Arma scegliArmaCasuale(){
 			int sceltaArma = EstrazioniCasuali.estraiIntero(1, 5);
