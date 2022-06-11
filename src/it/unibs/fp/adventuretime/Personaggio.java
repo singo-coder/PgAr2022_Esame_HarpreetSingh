@@ -7,5 +7,7 @@ public class Personaggio extends Entita {
 		super(nome, 20, 5, 5, x, y,new Arma("pugno",1));
 	}
 	
-
+	public String toString() {
+		return getNome() + "\nHP Personaggio: " + getVita();
+	}
 }
