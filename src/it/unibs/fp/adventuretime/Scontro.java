@@ -13,11 +13,6 @@ public class Scontro {
 			Mostro m=generaMostro(posx,posy);
 			System.out.println("OH NO! Ti sei imbattuto in "+m.getNome()+ "! E' un mostro pericoloso!");
 			
-			System.out.println("Danno plaeyr : "+p.Danno());
-			System.out.println("Danno Mostrro : "+m.Danno());
-			
-			
-			
 			do {
 				m.setVita(m.getVita()-(int)p.Danno());
 				System.out.println(p.toString()+" ha colpito "+m.toString()+"\n\n");

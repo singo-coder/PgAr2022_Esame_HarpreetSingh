@@ -8,8 +8,6 @@ public class Cesta {
 	
 	public Cesta(Oggetto o, int x,int y) {
 		super();
-		//
-		
 		this.p = new Posizione(x,y);
 	}
 	public Posizione getP() {

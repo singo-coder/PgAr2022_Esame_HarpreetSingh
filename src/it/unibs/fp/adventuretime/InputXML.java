@@ -32,8 +32,8 @@ public class InputXML {
 				switch (xmlr.getEventType()) {
 					//--------------------------------
 					case XMLStreamConstants.START_DOCUMENT: 
-						System.out.println("Start Read Doc " + filename); 
-						System.out.println("\nCaricamento in corso..."); 
+						//System.out.println("Start Read Doc " + filename); 
+						//System.out.println("\nCaricamento in corso..."); 
 					break;
 					//--------------------------------
 					case XMLStreamConstants.START_ELEMENT: 
@@ -52,10 +52,6 @@ public class InputXML {
 								row++;
 								riga.clear();
 							}
-						}
-						
-						if(xmlr.getLocalName().equals("mappa")) {
-							System.out.println("Dim di row alla fine: "+row );
 						}
 					break;
 					//--------------------------------
@@ -77,7 +73,6 @@ public class InputXML {
 		} catch (XMLStreamException e) {
 			e.printStackTrace();
 		}
-		System.out.println("\nCaricamento completato!");
 		return mappa;
 	}
 }

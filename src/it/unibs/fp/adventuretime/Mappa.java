@@ -104,9 +104,19 @@ public class Mappa {
 					if(!Mappa.IsMuro(mappa[posX][posY+1])){
 						System.out.println("Attenzione! Movimento non possibile! C'è un muro!");
 					}else {
-						mappa[posX][posY]='.';
-						mappa[posX][posY+1]='O';
-						posY=posY+1;
+						if(IsMostro(mappa[posX][posY+1])) {
+							if(!Scontro.generaScontro(p,posX,posY)) {
+								perdita=true;
+							}else {
+								mappa[posX][posY]='.';
+								mappa[posX][posY+1]='O';
+								posY=posY+1;
+							}
+							}else {
+								mappa[posX][posY]='.';
+								mappa[posX][posY+1]='O';
+								posY=posY+1;
+							}
 						System.out.println(posX+" "+posY);
 					}
 				}
@@ -120,10 +130,25 @@ public class Mappa {
 					if(!Mappa.IsMuro(mappa[posX+1][posY])){
 						System.out.println("Attenzione! Movimento non possibile! C'è un muro!");
 					}else {
+						if(IsMostro(mappa[posX+1][posY])) {
+							if(!Scontro.generaScontro(p,posX,posY)) {
+								perdita=true;
+							}else {
+								mappa[posX][posY]='.';
+								mappa[posX+1][posY]='O';
+								posX=posX+1;
+							}
+							}else {
+								mappa[posX][posY]='.';
+								mappa[posX+1][posY]='O';
+								posX=posX+1;
+							}
+						System.out.println(posX+" "+posY);
+						/*
 						mappa[posX][posY]='.';
 						mappa[posX+1][posY]='O';
 						posX=posX+1;
-						System.out.println(posX+" "+posY);
+						System.out.println(posX+" "+posY);*/
 					}
 				}
 			break;
@@ -136,9 +161,19 @@ public class Mappa {
 					if(!Mappa.IsMuro(mappa[posX][posY-1])){
 						System.out.println("Attenzione! Movimento non possibile! C'è un muro!");
 					}else {
-						mappa[posX][posY]='.';
-						mappa[posX][posY-1]='O';
-						posY=posY-1;
+						if(IsMostro(mappa[posX][posY-1])) {
+							if(!Scontro.generaScontro(p,posX,posY)) {
+								perdita=true;
+							}else {
+								mappa[posX][posY]='.';
+								mappa[posX][posY-1]='O';
+								posX=posX-1;
+							}
+							}else {
+								mappa[posX][posY]='.';
+								mappa[posX][posY-1]='O';
+								posY=posY-1;
+							}
 						System.out.println(posX+" "+posY);
 					}
 				}	
