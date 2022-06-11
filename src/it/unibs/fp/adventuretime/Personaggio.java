@@ -8,6 +8,6 @@ public class Personaggio extends Entita {
 	}
 	
 	public String toString() {
-		return getNome() + "\nHP Personaggio: " + getVita();
+		return "\n"+getNome() + "(HP Personaggio:" + getVita()+")";
 	}
 }

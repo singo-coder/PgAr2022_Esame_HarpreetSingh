@@ -62,7 +62,7 @@ public abstract class Entita {
 	
 	public double Danno() {
 		double danno;
-		danno=((2*a.getPotenza()*atk)/(25*def))+2*modificatore;
+		danno=((2*a.getPotenza()*atk)/(25*def))+2*GetModificatore();
 		return danno;
 	}
 	
